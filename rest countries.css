@@ -1,0 +1,138 @@
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #333;
+    --element-bg: #fff;
+    --input-color: #858585;
+}
+
+.dark-theme {
+    --bg-color: #202c37;
+    --text-color: #fff;
+    --element-bg: #2b3945;
+    --input-color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: var(--element-bg);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+button {
+    background-color: var(--element-bg);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.search-filter-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.form-control {
+    position: relative;
+    width: 300px;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 10px 40px;
+    border: none;
+    background-color: var(--element-bg);
+    color: var(--text-color);
+    border-radius: 5px;
+}
+
+.form-control i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--input-color);
+}
+
+.dropDownCon {
+    position: relative;
+}
+
+.dropDown {
+    background-color: var(--element-bg);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.dropDown p {
+    margin: 0;
+}
+
+.drop {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--element-bg);
+    border-radius: 5px;
+    margin-top: 5px;
+    display: none;
+}
+
+.drop.show {
+    display: block;
+}
+
+.drop p {
+    margin: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.drop p:hover {
+    background-color: var(--bg-color);
+}
+
+#countries-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.country-card {
+    background-color: var(--element-bg);
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.country-flag {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}

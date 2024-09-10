@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST Countries API with Theme Switcher</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="rest.css">
+</head>
+<body>
+    <header>
+        <h1>Where in the world?</h1>
+        <button id="theme-switcher">Toggle Theme</button>
+    </header>
+    <div class="search-filter-container">
+        <div class="form-control">
+            <input type="text" id="search-input" placeholder="Search for a country">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="dropDownCon">
+            <div class="dropDown">
+                <p>Filter by Region</p>
+                <button><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="drop">
+                <p data-region="all">All</p>
+                <p data-region="Africa">Africa</p>
+                <p data-region="Americas">Americas</p>
+                <p data-region="Asia">Asia</p>
+                <p data-region="Europe">Europe</p>
+                <p data-region="Oceania">Oceania</p>
+            </div>
+        </div>
+    </div>
+    <div id="countries-container">
+    </div>
+    <script src="rest.js"></script>
+</body>
+</html>
